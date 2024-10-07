@@ -129,6 +129,5 @@ const cardAlquiler = alquilerCard.map((card) => {
   `;
 });
 
-// Ahora, asegura que esto se ejecute después de que el DOM esté cargado
 const alquilerContainer = document.querySelector('.alquiler_container');
 alquilerContainer.innerHTML = cardAlquiler.join('');

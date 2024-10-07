@@ -96,7 +96,7 @@ const cardVentas = ventasCard.map((card) => {
   `;
 });
 
-// Ahora, asegura que esto se ejecute después de que el DOM esté cargado
+
 const ventasContainer = document.querySelector('.ventas_container');
 ventasContainer.innerHTML = cardVentas.join('');
 
@@ -200,6 +200,6 @@ const cardAlquiler = alquilerCard.map((card) => {
   `;
 });
 
-// Ahora, asegura que esto se ejecute después de que el DOM esté cargado
+
 const alquilerContainer = document.querySelector('.alquiler_container');
 alquilerContainer.innerHTML = cardAlquiler.join('');
