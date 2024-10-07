@@ -1,0 +1,82 @@
+.main-section {
+    background-image: url('../img/img-main.jpeg');
+    background-size: cover; /* La imagen cubrirá todo el ancho y largo */
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.ventas_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 16px; /* Establece un espacio entre los elementos */
+}
+
+.ventas_container > div { /* Asumiendo que cada elemento es un div */
+    flex: 1 1 calc(33.33% - 16px); /* Cada elemento tomará el 33.33% del ancho menos el espacio para el gap */
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho */
+}
+
+.alquiler_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 16px; /* Establece un espacio entre los elementos */
+}
+
+.alquiler_container > div { /* Asumiendo que cada elemento es un div */
+    flex: 1 1 calc(33.33% - 16px); /* Cada elemento tomará el 33.33% del ancho menos el espacio para el gap */
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho */
+}
+
+.card {
+    flex: 1; /* Permitir que las tarjetas crezcan para ocupar espacio disponible */
+    display: flex; /* Flex para hacer que el contenido interno se ajuste */
+    flex-direction: column; /* Asegura que el contenido se apile verticalmente */
+}
+
+.card img {
+    width: 100%; /* La imagen ocupará todo el ancho de la tarjeta */
+    height: 200px; /* Establecer una altura fija para todas las imágenes */
+    object-fit: cover; /* Recorta la imagen para que se ajuste y no se distorsione */
+}
+
+.card-content { /* Nueva clase para contener el contenido textual */
+    padding: 16px; /* Espaciado interno para mejorar la presentación */
+    flex: 1; /* Permitir que el contenido textual ocupe el espacio restante */
+}
+
+.footer {
+    display: flex; /* Usar Flexbox en el footer */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    width: 100%; /* Asegurarse de que el footer ocupe todo el ancho */
+    background-color: black; /* Cambiar este color según tus requerimientos */
+    margin: 0; /* Eliminar márgenes */
+    padding: 20px 0; /* Añadir un poco de padding si es necesario */
+}
+
+.bajada {
+    background-color: black;
+    color: #f8f9fa;
+    text-align: center; /* Centrar el texto dentro del div */
+    width: 100%; /* Asegurarse de que la bajada ocupe todo el ancho */
+}
+
+.footer p {
+    font-size:16px; /* Ajustar el tamaño de la fuente según sea necesario */
+    margin: 0; /* Eliminar margen por defecto en el párrafo */
+    color: #f8f9fa;
+}
+
+#btnVolver {
+    margin: 1rem;
+}
+
